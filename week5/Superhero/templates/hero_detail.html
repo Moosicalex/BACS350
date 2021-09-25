@@ -1,0 +1,12 @@
+{% extends 'hero_theme.html' %}
+
+{% block content %}
+
+    <h1>Hero Details</h1>
+    <ul>
+        <li>Name: {{ object.name }}</li>
+        <li>Description: {{ object.description }}</li>
+        <a href="hero_list.html">Back to list</a>
+    </ul>
+    
+{% endblock content %}
