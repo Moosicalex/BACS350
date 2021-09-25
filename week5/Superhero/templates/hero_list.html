@@ -2,10 +2,10 @@
 
 {% block content %}
 
-    <h1>List of Heros</h1>
+    <h1>Superhero News</h1>
     <ul>
       {% for hero in object_list %}
-        <li>{{ hero.name }}: {{ hero.description }} --
+        <li>{{ hero.name }}'s identity is  --
           <a href="{{ hero.pk }}">{{ hero.name }}</a>
         </li>
       {% endfor %}
