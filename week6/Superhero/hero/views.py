@@ -8,7 +8,7 @@ from .models import Hero
 class HeroCreateView(CreateView):
     model = Hero
     template_name = 'hero_add.html'
-    fields = ['name', 'identity']
+    fields = ['name', 'identity', 'description', 'image', 'strength', 'weakness']
 
 class HeroView(RedirectView):
     url = '/hero/'
