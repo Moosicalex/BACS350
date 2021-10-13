@@ -5,7 +5,7 @@ from django.views.generic import CreateView, DeleteView, DetailView, ListView, R
 
 from .models import Hero
 
-class HeroCreateView(CreateView):
+class HeroCreateView(LoginRequiredMixin, CreateView):
     model = Hero
     template_name = 'hero_add.html'
     fields = ['name', 'identity', 'description', 'image', 'strength', 'weakness']
@@ -21,12 +21,12 @@ class HeroDetailView(DetailView):
     template_name = "hero_detail.html"
     model = Hero
 
-class HeroUpdateView(UpdateView):
+class HeroUpdateView(LoginRequiredMixin, UpdateView):
     template_name = "hero_edit.html"
     model = Hero
-    fields = ['name', 'identity']
+    fields = ['name', 'identity', 'description', 'image', 'strength', 'weakness']
 
-class HeroDeleteView(DeleteView):
+class HeroDeleteView(LoginRequiredMixin, DeleteView):
     model = Hero
     template_name = 'hero_delete.html'
     success_url = reverse_lazy('hero_list')
