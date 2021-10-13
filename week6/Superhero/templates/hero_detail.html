@@ -1,0 +1,16 @@
+{% extends 'hero_theme.html' %}
+
+
+{% block content %}
+<h1>Hero Details</h1>
+<ul>
+    <li>Name: {{ object.name }}</li>
+    <li>Identity: {{ object.identity }}</li>
+    <img src="{{ object.image }}" alt="{{ object.name }} has left the building">
+    <li>Description: {{ object.description }}</li>
+    <li>Streangth: {{ object.strength }}</li>
+    <li>Weakness: {{ object.weakness }}</li>
+</ul>
+
+<a href="/hero/" class="btn btn-warning m-5">Hero List</a>
+{% endblock content %}

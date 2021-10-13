@@ -1,0 +1,14 @@
+{% extends 'hero_theme.html' %}
+
+
+{% block content %}
+<h1>Edit Hero</h1>
+
+<form action="" method="post">{% csrf_token %}
+
+    {{ form }}
+
+    <button class="btn btn-warning mt-5" type="submit">Save Record</button>
+</form>
+</div>
+{% endblock content %}
