@@ -11,3 +11,6 @@ class Hero(models.Model):
 
     def get_absolute_url(self):
         return reverse_lazy('hero_detail', args=[str(self.id)])
+
+    def __str__(self):
+        return f'{self.pk} - {self.name} AKA {self.identity}'
