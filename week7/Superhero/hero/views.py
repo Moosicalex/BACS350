@@ -10,7 +10,7 @@ class HeroView(RedirectView):
 
 class HeroListView(ListView):
     template_name = "hero_list.html"
-    model = Hero
+    model = Hero 
 
 class HeroDetailView(DetailView):
     template_name = 'hero_detail.html'
