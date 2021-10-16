@@ -59,7 +59,7 @@ LOGOUT_REDIRECT_URL = 'home'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates_users'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
