@@ -1,0 +1,33 @@
+
+
+header {
+    background-color: darkslategrey;
+    margin-bottom: 0pt;
+}
+
+h1  {
+    color: #5bc0de;
+    text-align: center;
+    text-shadow: 10vmax;
+    font-size: 60px;
+}
+
+img {
+    background-color: darkslategrey;
+    max-height:500px;
+    max-width:500px;
+    height:auto;
+    width:auto;
+    float: right;
+    border: darkslategrey 10px solid;
+    border-radius: 10px;
+}
+
+li {
+    font-size: 20pt;
+}
+
+ul {
+    background-color: darkslategrey;
+    list-style-type: none;
+}

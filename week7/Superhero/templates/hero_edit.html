@@ -2,13 +2,15 @@
 
 
 {% block content %}
-<h1>Edit Hero</h1>
+<header>
+    <h1>Edit Hero</h1>
+</header>
 
-<form action="" method="post">{% csrf_token %}
+<form style="background-color: darkslategray;" action="" method="post">{% csrf_token %}
 
     {{ form.as_p }}
 
-    <button class="btn btn-warning mt-5" type="submit">Save Record</button>
+    <button class="btn btn-info mt-5" type="submit">Save Record</button>
 </form>
 </div>
 {% endblock content %}
