@@ -1,0 +1,16 @@
+{% extends 'superhero_theme.html' %}
+
+
+{% block content %}
+<header>
+    <h1>Edit Hero</h1>
+</header>
+
+<form style="background-color: slategray;" action="" method="post">{% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button class="btn btn-warning mt-5" type="submit">Save Record</button>
+</form>
+</div>
+{% endblock content %}

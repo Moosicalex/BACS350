@@ -1,0 +1,33 @@
+
+
+header {
+    background-color:maroon;
+    margin-bottom: 0pt;
+}
+
+h1  {
+    color:thistle;
+    text-align: center;
+    text-shadow: 10vmax;
+    font-size: 60px;
+}
+
+img {
+    background-color:slategray;
+    max-height:500px;
+    max-width:500px;
+    height:auto;
+    width:auto;
+    float: right;
+    border:slategray 10px solid;
+    border-radius: 10px;
+}
+
+li {
+    font-size: 20pt;
+}
+
+ul {
+    background-color:slategray;
+    list-style-type: none;
+}
