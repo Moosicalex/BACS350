@@ -23,7 +23,7 @@ class HeroDetailView(DetailView):
     template_name = 'hero_detail.html'
     model = Hero
 
-class HeroCreateView(CreateView):
+class HeroCreateView(LoginRequiredMixin, CreateView):
     template_name = 'hero_add.html'
     model = Hero
     fields = ['name', 'identity', 'description', 'image', 'strength', 'weakness']

@@ -1,20 +1,24 @@
+from django.views.generic import RedirectView
+from django.urls.conf import include, include
 from django.contrib import admin
 from django.urls import path
 
-from hero.views import HeroView, HeroDeleteView, HeroDetailView, HeroListView, HeroCreateView, HeroUpdateView, SignUpView
+from hero.views import HeroView
+
 
 urlpatterns = [
 
     # Admin
     path('admin/', admin.site.urls),
 
-    # Hero Views
-    path('', HeroView.as_view()),
-    path('hero/',                   HeroListView.as_view(),    name='hero_list'),
-    path('hero/<int:pk>',           HeroDetailView.as_view(),  name='hero_detail'),
-    path('hero/add',                HeroCreateView.as_view(),  name='hero_add'),
-    path('hero/<int:pk>/',          HeroUpdateView.as_view(),  name='hero_edit'),
-    path('hero/<int:pk>/delete',    HeroDeleteView.as_view(),  name='hero_delete'),
+    # Accounts
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('accounts/', include('accounts.urls')),
 
-     # Sign Up
-    path('signup/', SignUpView.as_view(), name='signup'),
+    # Book
+    path('', include('hero.urls')),
+
+    # Document
+    # path('', include('doc.urls')),
+
+]
