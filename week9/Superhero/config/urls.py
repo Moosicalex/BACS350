@@ -19,6 +19,6 @@ urlpatterns = [
     path('', include('hero.urls')),
 
     # Document
-    # path('', include('doc.urls')),
+    path('', include('doc.urls')),
 
 ]
