@@ -1,33 +1,42 @@
 
 
 header {
-    background-color: whitesmoke;
     margin-bottom: 0pt;
+    text-shadow:2px 2px turquoise;
+}
+
+footer {
+    margin-top: 0px;
 }
 
 h1  {
-    color: black;
+    color: white;
     text-align: center;
     text-shadow: 10vmax;
     font-size: 60px;
 }
 
 img {
-    background-color: whitesmoke;
-    max-height:500px;
-    max-width:500px;
+    max-height:450px;
+    max-width:450px;
     height:auto;
     width:auto;
     float: right;
-    border: whitesmoke 10px solid;
-    border-radius: 10px;
 }
 
 li {
     font-size: 20pt;
 }
 
+.navbar ul {
+    border:black 5px solid;
+    border-radius: 100px;
+    list-style-type: none;
+}
+.navbar {
+    background-color: black;
+}
+
 ul {
-    background-color: whitesmoke;
     list-style-type: none;
 }

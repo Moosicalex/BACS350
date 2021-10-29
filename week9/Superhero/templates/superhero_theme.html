@@ -10,7 +10,7 @@
     <link href="/static/hero_3.css" rel="stylesheet">
 </head>
 
-<body class="bg-light text-dark">
+<body>
     {% block navbar %}
     {% include '_navbar.html' %}
     {% endblock navbar %}  
@@ -19,9 +19,11 @@
     {% include '_header.html' %}
     {% endblock header %}
 
-    {% block content %}
-    <h2>No Main Block Defined</h2>
-    {% endblock content %}
+    <div class="bg-dark text-light" style="margin-bottom: 0px; min-height: 600px;">
+        {% block content %}
+        <h2>No Main Block Defined</h2>
+        {% endblock content %}
+    </div>
 
     {% block footer %}
     {% include '_footer.html' %}
