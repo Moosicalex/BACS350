@@ -1,25 +1,25 @@
 
 
 header {
-    background-color: darkslategrey;
+    background-color: whitesmoke;
     margin-bottom: 0pt;
 }
 
 h1  {
-    color: #5bc0de;
+    color: black;
     text-align: center;
     text-shadow: 10vmax;
     font-size: 60px;
 }
 
 img {
-    background-color: darkslategrey;
+    background-color: whitesmoke;
     max-height:500px;
     max-width:500px;
     height:auto;
     width:auto;
     float: right;
-    border: darkslategrey 10px solid;
+    border: whitesmoke 10px solid;
     border-radius: 10px;
 }
 
@@ -28,6 +28,6 @@ li {
 }
 
 ul {
-    background-color: darkslategrey;
+    background-color: whitesmoke;
     list-style-type: none;
 }

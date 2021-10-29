@@ -9,7 +9,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # Hero Views
-    path('', HeroView.as_view()),
+    path('',                        HeroView.as_view(),        name='home'),
     path('hero/',                   HeroListView.as_view(),    name='hero_list'),
     path('hero/<int:pk>',           HeroDetailView.as_view(),  name='hero_detail'),
     path('hero/add',                HeroCreateView.as_view(),  name='hero_add'),

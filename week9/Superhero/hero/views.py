@@ -28,12 +28,12 @@ class HeroCreateView(LoginRequiredMixin, CreateView):
     model = Hero
     fields = ['name', 'identity', 'description', 'image', 'strength', 'weakness']
 
-class HeroUpdateView(UpdateView):
+class HeroUpdateView(LoginRequiredMixin, UpdateView):
     template_name = 'hero_edit.html'
     model = Hero
     fields = ['name', 'identity', 'description', 'image', 'strength', 'weakness']
 
-class HeroDeleteView(DeleteView):
+class HeroDeleteView(LoginRequiredMixin, DeleteView):
     model = Hero
     template_name = 'hero_delete.html'
     success_url = reverse_lazy('hero_list')

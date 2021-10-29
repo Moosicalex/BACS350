@@ -10,15 +10,22 @@
     <link href="/static/hero_3.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark text-light">
-    <div class="container">
+<body class="bg-light text-dark">
+    {% block navbar %}
+    {% include '_navbar.html' %}
+    {% endblock navbar %}  
 
-        {% block content %}
-        <h2>No Main Block Defined</h2>
-        {% endblock content %}
+    {% block header %}
+    {% include '_header.html' %}
+    {% endblock header %}
 
-    </div>
-  
+    {% block content %}
+    <h2>No Main Block Defined</h2>
+    {% endblock content %}
+
+    {% block footer %}
+    {% include '_footer.html' %}
+    {% endblock footer %}
 
 </body>
 
