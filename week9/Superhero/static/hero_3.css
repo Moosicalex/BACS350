@@ -37,6 +37,12 @@ li {
     background-color: black;
 }
 
+.navbar-brand {
+    font-size: 40pt;
+    font-weight: 600;
+    text-shadow:2px 2px turquoise;
+}
+
 ul {
     list-style-type: none;
 }
