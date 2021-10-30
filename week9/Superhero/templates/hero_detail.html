@@ -17,5 +17,5 @@
 
 <a href="/hero/" class="btn btn-info m-5">Hero List</a>
 <a href="{{ hero.pk }}/" class="btn btn-info m-5">Edit this Hero</a>
-<a href="{% url 'document' %}" class="btn btn-info m-5">Articles</a>
+<a href="../doc/{{ hero.description }}" class="btn btn-info m-5">Article</a>
 {% endblock content %}

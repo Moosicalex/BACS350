@@ -12,6 +12,7 @@
             <th>Identity</th>
             <th>Edit</th>
             <th>Delete</th>
+            <th>Article</th>
         </tr>
         {% for hero in object_list %}
         <tr>
@@ -19,6 +20,7 @@
             <td>{{ hero.identity }}</td>
             <td><a href="{{ hero.pk }}/">Edit</a></td>
             <td><a href="{{ hero.pk }}/delete">Delete</a></td>
+            <td><a href="../doc/{{ hero.description }}">Article</a></td>
         </tr>
         {% endfor %}
     </table>
@@ -28,6 +30,5 @@
 <p>
     <a href="/admin/" class="btn btn-info text-dark m-5">Modify Database with Admin Views</a>
     <a href="/hero/add" class="btn btn-info text-dark m-5" style="box-shadow: 2px 2px black;">Add New Hero</a>
-    <a href="/doc/{{ hero.pk }}" class="btn btn-info text-dark m-5">Article</a>
 </p>
 {% endblock content %}
