@@ -17,12 +17,20 @@ h1  {
 }
 
 img {
+    max-width:700px;
+    height:auto;
+    width:auto;
+    float: right;
+}
+
+.descImg {
     max-height:450px;
     max-width:450px;
     height:auto;
     width:auto;
     float: right;
 }
+
 
 li {
     font-size: 20pt;
