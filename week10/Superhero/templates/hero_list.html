@@ -1,0 +1,34 @@
+{% extends 'superhero_theme.html' %}
+
+
+{% block content %}
+<header>
+    <h1 class="bg-dark text-light">List of Heroes</h1>
+</header>
+<div class="container text-dark p-3" style="margin-top: 0px; margin-bottom: 0px;">
+    <table class="table table-hover bg-dark text-light">
+        <tr>
+            <th>Hero</th>
+            <th>Identity</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th>Article</th>
+        </tr>
+        {% for hero in object_list %}
+        <tr>
+            <td><a href="{{ hero.pk }}">{{ hero.name }}</a></td>
+            <td>{{ hero.identity }}</td>
+            <td><a href="{{ hero.pk }}/">Edit</a></td>
+            <td><a href="{{ hero.pk }}/delete">Delete</a></td>
+            <td><a href="../doc/{{ hero.description }}">Article</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+<p>
+    <a href="/admin/" class="btn btn-info text-dark m-5">Modify Database with Admin Views</a>
+    <a href="/hero/add" class="btn btn-info text-dark m-5" style="box-shadow: 2px 2px black;">Add New Hero</a>
+</p>
+{% endblock content %}

@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-sm navbar-dark">
+
+    <div class="container">
+
+        <a class="navbar-brand text-light" href="/">Hero Builder</a>
+
+        <ul class="navbar-nav bg-dark text-light ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="{% url 'hero_list' %}">List Heros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="{% url 'hero_add' %}">Add Heros</a>
+            </li>
+
+            {% if user.is_authenticated %}
+
+            <li class="nav-item">
+                <a class="nav-link  text-light " href="{% url 'logout' %}">Hello {{ user.username }}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-light" href="{% url 'logout' %}">Log out</a>
+            </li>
+
+            {% else %}
+
+            <li class="nav-item">
+                <a class="nav-link  text-light" href="{% url 'login' %}">Log In</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link  text-light" href="{% url 'signup' %}">Sign Up</a>
+            </li>
+
+            {% endif %}
+
+        </ul>
+
+    </div>
+
+</nav>

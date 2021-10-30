@@ -1,0 +1,60 @@
+
+
+header {
+    margin-bottom: 0pt;
+    text-shadow:2px 2px turquoise;
+}
+
+footer {
+    margin-top: 0px;
+}
+
+h1  {
+    color: white;
+    text-align: center;
+    text-shadow: 10vmax;
+    font-size: 60px;
+}
+
+img {
+    max-width:700px;
+    height:auto;
+    width:auto;
+    float: right;
+}
+
+.descImg {
+    max-height:450px;
+    max-width:450px;
+    height:auto;
+    width:auto;
+    float: right;
+}
+
+
+li {
+    font-size: 20pt;
+}
+
+.navbar ul {
+    border:black 5px solid;
+    border-radius: 100px;
+    list-style-type: none;
+}
+.navbar {
+    background-color: black;
+}
+
+.navbar-brand {
+    font-size: 40pt;
+    font-weight: 600;
+    text-shadow:2px 2px turquoise;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.btn {
+    box-shadow: -5px 5px darkslategrey;
+}
