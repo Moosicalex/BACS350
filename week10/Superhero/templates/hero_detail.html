@@ -5,18 +5,20 @@
 <header>
     <h1 class="bg-dark text-light">Hero Details</h1>
 </header>
-<ul class="text-center" style="background-image: url('../static/images/background.jpg'); background-repeat: no-repeat; background-size: cover; border-radius: 60pt; text-shadow:2px 2px rgb(52, 182, 169); margin-left: 225px; margin-right: 225px;">
-    <li><div class="heroName"> {{ object.name }}</div> AKA {{ object.identity }}</li>
-    <div class=" text-center">
+<ul class="text-center" style="background-image: url('../static/images/background2.jpg'); background-repeat: no-repeat; background-size: cover; border-radius: 90pt; margin-left: 225px; margin-right: 225px;">
+    <li style="color: black;"><div style="text-shadow:2px 2px rgb(52, 182, 169);" class="heroName"> {{ object.name }}</div><div style="font-weight:900; color: black;"> AKA {{ object.identity }}</div></li>
+    <div class=" text-center" style="min-height: 300pt;">
         <a href="{{object.image}}">
-            <img class="descImg" style="max-width:450px; " src="{{ object.image }}" alt="{{ object.name }} has left the building">
+            <img class="descImg" style="max-width:450px;" src="{{ object.image }}" alt="{{ object.name }} has left the building">
         </a>
     </div>
     <li>Strength: {{ object.strength }}</li>
     <li>Weakness: {{ object.weakness }}</li>
 </ul>
+<div class="text-center">
+    <a href="/hero/" class="btn btn-info m-5">Hero List</a>
+    <a href="{{ hero.pk }}/" class="btn btn-info m-5">Edit this Hero</a>
+    <a href="../doc/{{ hero.description }}" class="btn btn-info m-5">Article</a>
+</div>
 
-<a href="/hero/" class="btn btn-info m-5">Hero List</a>
-<a href="{{ hero.pk }}/" class="btn btn-info m-5">Edit this Hero</a>
-<a href="../doc/{{ hero.description }}" class="btn btn-info m-5">Article</a>
 {% endblock content %}
