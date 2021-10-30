@@ -16,6 +16,12 @@ h1  {
     font-size: 60px;
 }
 
+.heroName {
+    font-size: 60pt;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 img {
     max-width:700px;
     height:auto;
@@ -28,7 +34,8 @@ img {
     max-width:450px;
     height:auto;
     width:auto;
-    float: right;
+    float: none;
+    justify-content: center;
 }
 
 

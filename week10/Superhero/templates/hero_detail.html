@@ -5,11 +5,13 @@
 <header>
     <h1 class="bg-dark text-light">Hero Details</h1>
 </header>
-<ul>
-    <li>Name: {{ object.name }} AKA {{ object.identity }}</li>
-    <a href="{{object.image}}">
-    <img style="max-height:450px; max-width:450px;" src="{{ object.image }}" alt="{{ object.name }} has left the building">
-    </a>
+<ul class="text-center" style="background-image: url('../static/images/background.jpg'); background-repeat: no-repeat; background-size: cover; border-radius: 60pt; text-shadow:2px 2px rgb(52, 182, 169); margin-left: 225px; margin-right: 225px;">
+    <li><div class="heroName"> {{ object.name }}</div> AKA {{ object.identity }}</li>
+    <div class=" text-center">
+        <a href="{{object.image}}">
+            <img class="descImg" style="max-width:450px; " src="{{ object.image }}" alt="{{ object.name }} has left the building">
+        </a>
+    </div>
     <li>Strength: {{ object.strength }}</li>
     <li>Weakness: {{ object.weakness }}</li>
 </ul>
