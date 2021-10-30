@@ -1,0 +1,6 @@
+# Black Widow
+![Natasha should be here](..\static\images\blackwidow.png)
+
+Black Widow (Natalia Alianovna "Natasha" Romanova; Russian: Наталья Альяновна "Наташа" Романова)[1] is a fictional character appearing in American comic books published by Marvel Comics. Created by editor and plotter Stan Lee, scripter Don Rico, and artist Don Heck, the character debuted in Tales of Suspense #52 (April 1964). The character was introduced as a Russian spy, an antagonist of the superhero Iron Man. She later defected to the United States, becoming an agent of the fictional spy agency S.H.I.E.L.D. and a member of the superhero team the Avengers.
+
+The character has appeared in numerous forms of media, such as animated television series, video games, and films; with Scarlett Johansson portraying the character in several Marvel Cinematic Universe films including Iron Man 2 (2010), The Avengers (2012), Captain America: The Winter Soldier (2014), Avengers: Age of Ultron (2015), Captain America: Civil War (2016), Avengers: Infinity War (2018), a cameo in Captain Marvel (2019), Avengers: Endgame (2019) and Black Widow (2021). Ever Anderson portrayed a young Natasha in Black Widow. Lake Bell voices alternate reality versions of the character in the Disney+ animated series What If...? (2021).
