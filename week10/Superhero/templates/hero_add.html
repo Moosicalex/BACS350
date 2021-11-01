@@ -2,13 +2,15 @@
 
 
 {% block content %}
-<h1 class="bg-dark text-light">Add New Hero</h1>
+<header>
+    <h1 class="bg-dark text-light" style="text-decoration:underline;">Add New Hero</h1>
+</header>
 
 <form action="" method="post">{% csrf_token %}
 
     {{ form.as_ul }}
 
-    <button class="btn btn-danger mt-5" type="submit">Add Record</button>
+    <button class="btn btn-danger m-5" type="submit">Add Record</button>
 </form>
 </div>
 {% endblock content %}
