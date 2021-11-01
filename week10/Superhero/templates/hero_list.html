@@ -10,19 +10,19 @@
         <div class="container text-dark p-3" style="margin-top: 0px; margin-bottom: 0px; ">
             <table class="table table-hover bg-dark text-light" >
                 <tr>
-                    <th>Hero</th>
-                    <th>Identity</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
-                    <th>Article</th>
+                    <th style="min-width: 100%;" class="text-center">Hero</th>
+                    <th style="min-width: 100%;" class="text-center">Identity</th>
+                    <th style="min-width: 100%;" class="text-center">Edit</th>
+                    <th style="min-width: 100%;" class="text-center">Delete</th>
+                    <th style="min-width: 100%;" class="text-center">Article</th>
                 </tr>
                 {% for hero in object_list %}
                 <tr>
-                    <td><a style="box-shadow: 0pt 0pt white;" class="btn text-light" href="{{ hero.pk }}">{{ hero.name }}</a></td>
-                    <td>{{ hero.identity }}</td>
-                    <td><a href="{{ hero.pk }}/">Edit</a></td>
-                    <td><a href="{{ hero.pk }}/delete">Delete</a></td>
-                    <td><a href="../doc/{{ hero.description }}">Article</a></td>
+                    <td><a style="box-shadow: 0pt 0pt white; min-width: 100%;" class="btn btn-info text-dark" href="{{ hero.pk }}">{{ hero.name }}</a></td>
+                    <td style="min-width: 100%;" class="text-center">{{ hero.identity }}</td>
+                    <td style="min-width: 100%;" class="text-center"><a style="box-shadow: 0pt 0pt white;" class="btn btn-info text-dark text-center" href="{{ hero.pk }}/">Edit</a></td>
+                    <td style="min-width: 100%;" class="text-center"><a style="box-shadow: 0pt 0pt white;" class="btn btn-info text-dark" href="{{ hero.pk }}/delete">Delete</a></td>
+                    <td style="min-width: 100%;" class="text-center"><a style="box-shadow: 0pt 0pt white;" class="btn btn-info text-dark" href="../doc/{{ hero.description }}">Article</a></td>
                 </tr>
                 {% endfor %}
             </table>
