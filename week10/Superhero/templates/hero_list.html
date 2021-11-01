@@ -18,7 +18,7 @@
                 </tr>
                 {% for hero in object_list %}
                 <tr>
-                    <td><a href="{{ hero.pk }}">{{ hero.name }}</a></td>
+                    <td><a style="box-shadow: 0pt 0pt white;" class="btn text-light" href="{{ hero.pk }}">{{ hero.name }}</a></td>
                     <td>{{ hero.identity }}</td>
                     <td><a href="{{ hero.pk }}/">Edit</a></td>
                     <td><a href="{{ hero.pk }}/delete">Delete</a></td>
@@ -26,12 +26,8 @@
                 </tr>
                 {% endfor %}
             </table>
+            <a href="/hero/add" class="btn btn-info text-dark m-5" style="width: 90%; margin-left: 5%; margin-right: 5%;">Add New Hero</a>
         </div>
     </div>
 </div>
-
-<p>
-    <a href="/admin/" class="btn btn-info text-dark m-5">Modify Database with Admin Views</a>
-    <a href="/hero/add" class="btn btn-info text-dark m-5" style="box-shadow: 2px 2px black;">Add New Hero</a>
-</p>
 {% endblock content %}
